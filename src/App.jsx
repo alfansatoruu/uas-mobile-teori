@@ -351,7 +351,7 @@ const App = () => {
             onClick={() => setActiveTab('dashboard')}
           >
             <LayoutDashboard size={20} />
-            Dashboard
+            Form Input
           </a>
           <a
             href="#"
@@ -359,7 +359,7 @@ const App = () => {
             onClick={() => setActiveTab('customer')}
           >
             <Users size={20} />
-            
+            Data Balita
           </a>
           <a
             href="#"
@@ -496,8 +496,16 @@ const App = () => {
               ))}
             </div>
 
-            {/* Data Table Section */}
-            <div className="table-section">
+           
+          </>
+        )}
+
+        {activeTab === 'activities' && <ActivitiesSection />}
+
+        {/* Customer Section */}
+        {activeTab === 'customer' && (
+          <div className="customer-section">
+             <div className="table-section">
               <div className="table-header">
                 <h2>Data</h2>
                 <div className="search-container">
@@ -585,14 +593,6 @@ const App = () => {
                 </table>
               </div>
             </div>
-          </>
-        )}
-
-        {activeTab === 'activities' && <ActivitiesSection />}
-
-        {/* Customer Section */}
-        {activeTab === 'customer' && (
-          <div className="customer-section">
             {/* <div className="stats-container">
               <div className="stat-card">
               
