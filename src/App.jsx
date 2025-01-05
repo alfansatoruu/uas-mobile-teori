@@ -305,7 +305,7 @@ const App = () => {
       <div className="charts-container">
         <div className="chart-card">
           <h3>Distribusi Status Gizi</h3>
-          <PieChart width={400} height={300}>
+          <PieChart width={400} height={300} className='PieChart'>
             <Pie
               data={nutritionDistribution}
               dataKey="count"
@@ -326,7 +326,7 @@ const App = () => {
 
         <div className="chart-card">
           <h3>Status Gizi per Jenis Kelamin</h3>
-          <BarChart width={500} height={300} data={nutritionDistribution}>
+          <BarChart width={500} height={300} data={nutritionDistribution} className='BarChart'>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="status" />
             <YAxis />
@@ -337,6 +337,7 @@ const App = () => {
       </div>
     </div>
   );
+  
 
   return (
     <div className="app-container">
