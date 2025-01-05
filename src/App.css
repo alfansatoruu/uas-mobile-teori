@@ -494,7 +494,7 @@ tr:hover {
     bottom: 0;
     left: 0;
     padding: 0.5rem;
-    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    background: linear-gradient(135deg, #6f71ef 0%, #4f46e5 100%);
     z-index: 1000;
   }
 
@@ -533,54 +533,22 @@ tr:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* Media queries */
-@media screen and (min-width: 768px) {
-  .stats-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .stat-value {
-    font-size: 2.2rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .charts-container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+@media screen and (max-width: 500px) {
   .chart-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-}
-
-/* Chart-specific responsive styles */
-@media screen and (max-width: 500px) {
-  .PieChart {
-    width: 300px !important;
-    height: 250px !important;
+    justify-content: center;
   }
 
+  .PieChart,
   .BarChart {
     width: 350px !important;
     height: 250px !important;
   }
 }
 
+/* Tablet screens (501px to 768px) */
 @media screen and (min-width: 501px) and (max-width: 768px) {
   .PieChart {
     width: 350px !important;
@@ -593,6 +561,7 @@ tr:hover {
   }
 }
 
+/* Medium screens (769px to 1024px) */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .PieChart {
     width: 380px !important;
