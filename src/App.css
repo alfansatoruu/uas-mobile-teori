@@ -112,7 +112,8 @@ form {
   gap: 1.25rem;
 }
 
-input, select {
+input,
+select {
   padding: 0.875rem;
   border: 1px solid #e5e7eb;
   border-radius: 0.5rem;
@@ -122,11 +123,13 @@ input, select {
   background-color: #f9fafb;
 }
 
-input:hover, select:hover {
+input:hover,
+select:hover {
   border-color: #6366f1;
 }
 
-input:focus, select:focus {
+input:focus,
+select:focus {
   outline: none;
   border-color: #6366f1;
   box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
@@ -304,7 +307,8 @@ table {
   border-spacing: 0;
 }
 
-th, td {
+th,
+td {
   padding: 1rem;
   text-align: left;
   border-bottom: 1px solid #e5e7eb;
@@ -329,7 +333,8 @@ tr:hover {
   gap: 0.75rem;
 }
 
-.edit-btn, .delete-btn {
+.edit-btn,
+.delete-btn {
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.5rem;
@@ -438,68 +443,94 @@ tr:hover {
   margin-bottom: 0;
 }
 
-/* Responsive Design */
+/* Existing CSS remains the same until tablet breakpoint */
+
+/* Tablet Layout */
 @media (max-width: 1024px) {
-  .charts-container {
-    grid-template-columns: 1fr;
+  .app-container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 60px;
+    height: 100vh;
+    position: fixed;
+    padding: 1rem 0.5rem;
+    overflow: hidden;
+  }
+
+  .logo {
+    font-size: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .logo::first-letter {
+    font-size: 1.5rem;
+    color: white;
+  }
+
+  .sidebar nav {
+    align-items: center;
+  }
+
+  .sidebar nav a {
+    padding: 0.75rem;
+    justify-content: center;
+  }
+
+  .sidebar nav a span {
+    display: none;
+  }
+
+  .main-content {
+    margin-left: 60px;
+    padding: 1rem;
   }
 }
 
+/* Mobile Layout */
 @media (max-width: 768px) {
   .sidebar {
     width: 100%;
     height: auto;
-    position: relative;
-    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 0.5rem;
+    background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+    z-index: 1000;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .sidebar nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .sidebar nav a {
+    padding: 0.5rem;
   }
 
   .main-content {
     margin-left: 0;
+    margin-bottom: 60px;
     padding: 1rem;
   }
-
-  .stats-container {
-    grid-template-columns: 1fr;
-  }
-
-  form {
-    grid-template-columns: 1fr;
-  }
-
-  .table-header {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-
-  .table-actions {
-    width: 100%;
-    justify-content: space-between;
-  }
-  
-  .chart-card {
-    padding: 1rem;
-    overflow-x: auto;
-  }
 }
 
-/* Custom Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
+/* Small mobile layout adjustments */
+@media (max-width: 480px) {
+  .sidebar nav a {
+    padding: 0.4rem;
+  }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 4px;
-  border: 2px solid #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  .sidebar nav a svg {
+    width: 20px;
+    height: 20px;
+  }
 }
