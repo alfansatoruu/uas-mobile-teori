@@ -367,7 +367,7 @@ const App = () => {
             onClick={() => setActiveTab('activities')}
           >
             <Activity size={20} />
-            Aktivitas
+            Data Aktif
           </a>
           <a
             href="#"
@@ -375,7 +375,7 @@ const App = () => {
             onClick={() => setActiveTab('report')}
           >
             <FileText size={20} />
-            Ringkasan
+            Info Seputar
           </a>
         </nav>
       </div>
