@@ -382,7 +382,7 @@ const App = () => {
 
       {/* Main Content */}
       <div className="main-content">
-      
+
 
         {error && <ErrorAlert message={error} />}
 
@@ -496,7 +496,7 @@ const App = () => {
               ))}
             </div>
 
-           
+
           </>
         )}
 
@@ -505,7 +505,7 @@ const App = () => {
         {/* Customer Section */}
         {activeTab === 'customer' && (
           <div className="customer-section">
-             <div className="table-section">
+            <div className="table-section">
               <div className="table-header">
                 <h2>Data</h2>
                 <div className="search-container">
@@ -593,32 +593,6 @@ const App = () => {
                 </table>
               </div>
             </div>
-            {/* <div className="stats-container">
-              <div className="stat-card">
-              
-             
-              </div>
-              <div className="stat-card">
-                <div className="stat-header">
-                  <h3>Total Kunjungan Bulan Ini</h3>
-                  <Calendar size={20} />
-                </div>
-                <div className="stat-value">{dateStatistics.monthlyCount}</div>
-              </div>
-            </div> */}
-
-            {/* <div className="charts-container">
-              <div className="chart-card">
-                <h3>Tren Kunjungan Balita</h3>
-                <BarChart width={500} height={300} data={data}>
-                  <CartesianGrid strokeDasharray="3 3" />
-                  <XAxis dataKey="tanggal" />
-                  <YAxis />
-                  <Tooltip />
-                  <Bar dataKey="count" fill="#8884d8" />
-                </BarChart>
-              </div>
-            </div> */}
           </div>
         )}
 
@@ -634,16 +608,16 @@ const App = () => {
 
                 <h4>Indikator Status Gizi</h4>
                 <ul>
-                  <li><strong>Berat Badan dan Tinggi Badan:</strong> Pengukuran ini merupakan indikator pertama dalam menilai status gizi seseorang. Pengukuran yang tepat dapat membantu dalam mendiagnosis masalah kekurangan atau kelebihan gizi.</li>
-                  <li><strong>Indeks Massa Tubuh (IMT):</strong> IMT dihitung dengan membagi berat badan (kg) dengan kuadrat tinggi badan (m²). IMT yang normal berkisar antara 18,5 hingga 24,9. Nilai di bawah ini menunjukkan kekurangan gizi, sedangkan nilai di atasnya menunjukkan kelebihan berat badan atau obesitas.</li>
-                  <li><strong>Asupan Kalori dan Mikronutrien:</strong> Kekurangan kalori dan mikronutrien (seperti vitamin dan mineral) dapat menyebabkan gangguan metabolisme, pertumbuhan yang terhambat, dan penurunan fungsi tubuh. Sebaliknya, kelebihan asupan kalori dapat menyebabkan obesitas dan penyakit terkait.</li>
+                 <strong>Berat Badan dan Tinggi Badan:</strong> Pengukuran ini merupakan indikator pertama dalam menilai status gizi seseorang. Pengukuran yang tepat dapat membantu dalam mendiagnosis masalah kekurangan atau kelebihan gizi.
+                 <strong>Indeks Massa Tubuh (IMT):</strong> IMT dihitung dengan membagi berat badan (kg) dengan kuadrat tinggi badan (m²). IMT yang normal berkisar antara 18,5 hingga 24,9. Nilai di bawah ini menunjukkan kekurangan gizi, sedangkan nilai di atasnya menunjukkan kelebihan berat badan atau obesitas.
+                 <strong>Asupan Kalori dan Mikronutrien:</strong> Kekurangan kalori dan mikronutrien (seperti vitamin dan mineral) dapat menyebabkan gangguan metabolisme, pertumbuhan yang terhambat, dan penurunan fungsi tubuh. Sebaliknya, kelebihan asupan kalori dapat menyebabkan obesitas dan penyakit terkait.
                 </ul>
 
                 <h4>Jenis-jenis Masalah Gizi</h4>
                 <ul>
-                  <li><strong>Kekurangan Gizi:</strong> Kekurangan gizi terjadi ketika tubuh tidak menerima cukup kalori atau mikronutrien untuk mempertahankan fungsi tubuh yang optimal. Kekurangan gizi dapat menyebabkan masalah kesehatan serius, termasuk gangguan pertumbuhan pada anak-anak, anemia, dan sistem kekebalan tubuh yang lemah.</li>
-                  <li><strong>Obesitas:</strong> Obesitas terjadi ketika tubuh memiliki kelebihan lemak yang berpotensi mempengaruhi kesehatan. Obesitas dapat menyebabkan berbagai masalah kesehatan seperti diabetes tipe 2, hipertensi, penyakit jantung, dan gangguan pernapasan.</li>
-                  <li><strong>Malnutrisi:</strong> Malnutrisi terjadi ketika tubuh kekurangan salah satu atau beberapa zat gizi penting, baik itu makronutrien (karbohidrat, protein, lemak) atau mikronutrien (vitamin dan mineral). Malnutrisi dapat berakibat buruk pada sistem saraf, pertumbuhan, dan daya tahan tubuh.</li>
+                 <strong>Kekurangan Gizi:</strong> Kekurangan gizi terjadi ketika tubuh tidak menerima cukup kalori atau mikronutrien untuk mempertahankan fungsi tubuh yang optimal. Kekurangan gizi dapat menyebabkan masalah kesehatan serius, termasuk gangguan pertumbuhan pada anak-anak, anemia, dan sistem kekebalan tubuh yang lemah.
+                 <strong>Obesitas:</strong> Obesitas terjadi ketika tubuh memiliki kelebihan lemak yang berpotensi mempengaruhi kesehatan. Obesitas dapat menyebabkan berbagai masalah kesehatan seperti diabetes tipe 2, hipertensi, penyakit jantung, dan gangguan pernapasan.
+                 <strong>Malnutrisi:</strong> Malnutrisi terjadi ketika tubuh kekurangan salah satu atau beberapa zat gizi penting, baik itu makronutrien (karbohidrat, protein, lemak) atau mikronutrien (vitamin dan mineral). Malnutrisi dapat berakibat buruk pada sistem saraf, pertumbuhan, dan daya tahan tubuh.
                 </ul>
 
                 <h4>Menjaga Status Gizi yang Seimbang</h4>
