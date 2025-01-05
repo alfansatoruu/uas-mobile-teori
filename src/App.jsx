@@ -337,7 +337,7 @@ const App = () => {
       </div>
     </div>
   );
-  
+
 
   return (
     <div className="app-container">
@@ -499,7 +499,7 @@ const App = () => {
             {/* Data Table Section */}
             <div className="table-section">
               <div className="table-header">
-                <h2>Data Balita</h2>
+                <h2>Data</h2>
                 <div className="search-container">
                   <input
                     type="text"
