@@ -7,7 +7,12 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      '@': path.resolve(__dirname, './src'), // Tambahkan alias @ ke folder src
+      '@': path.resolve(__dirname, './src'), // Alias @ untuk mengarah ke folder src
     },
+  },
+  build: {
+    // Jika diperlukan, dapat menambahkan pengaturan untuk build
+    outDir: 'dist', // Pastikan folder output adalah 'dist'
+    sourcemap: true, // Aktifkan sourcemaps jika diperlukan untuk debugging
   },
 });
