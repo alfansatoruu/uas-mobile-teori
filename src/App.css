@@ -215,6 +215,7 @@ select:focus {
   font-size: 1.25rem;
   font-weight: 600;
 }
+
 /* Default styles (already defined) */
 
 /* Untuk layar di bawah 768px (tablet dan lebih kecil) */
@@ -261,7 +262,8 @@ select:focus {
     font-size: 0.9rem;
   }
 
-  th, td {
+  th,
+  td {
     padding: 0.5rem;
   }
 
@@ -292,7 +294,8 @@ select:focus {
     font-size: 0.8rem;
   }
 
-  th, td {
+  th,
+  td {
     padding: 0.4rem;
   }
 
@@ -352,6 +355,41 @@ select:focus {
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(101, 163, 13, 0.2);
 }
+
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1.25rem;
+  background: linear-gradient(135deg, #791082 0%, #87428c 100%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.link-btn:hover {
+  background: linear-gradient(135deg, #dd1658 0%, #5e033e 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .download-btn {
   display: flex;

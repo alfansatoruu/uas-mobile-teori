@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import * as XLSX from "xlsx";
 import './App.css';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, PieChart, Pie, Cell } from 'recharts';
-import { Download, LayoutDashboard, Users, Activity, FileText, Calendar, AlertCircle } from 'lucide-react';
+import { Download, LayoutDashboard, Users, Activity, FileText, Calendar, AlertCircle,ExternalLink  } from 'lucide-react';
 import { Alert, AlertDescription } from '@/components/ui/alert';
 
 const NUTRITIONAL_STATUS_COLORS = {
@@ -537,6 +537,13 @@ const App = () => {
                     <Download size={20} />
                     Download
                   </button>
+                  <button
+                    className="link-btn"
+                    onClick={() => window.open('https://docs.google.com/spreadsheets/d/1j8SXiAS4sdgo0gOZzH3xYwQyHB0kdMba/edit?usp=drive_link&ouid=111197553757287127474&rtpof=true&sd=true', '_blank')}
+                  >
+                    <ExternalLink size={20} />
+                   👉Dataset👈
+                  </button>
                 </div>
               </div>
               <div className="table-container">
@@ -608,16 +615,16 @@ const App = () => {
 
                 <h4>Indikator Status Gizi</h4>
                 <ul>
-                 <strong>Berat Badan dan Tinggi Badan:</strong> Pengukuran ini merupakan indikator pertama dalam menilai status gizi seseorang. Pengukuran yang tepat dapat membantu dalam mendiagnosis masalah kekurangan atau kelebihan gizi.
-                 <strong>Indeks Massa Tubuh (IMT):</strong> IMT dihitung dengan membagi berat badan (kg) dengan kuadrat tinggi badan (m²). IMT yang normal berkisar antara 18,5 hingga 24,9. Nilai di bawah ini menunjukkan kekurangan gizi, sedangkan nilai di atasnya menunjukkan kelebihan berat badan atau obesitas.
-                 <strong>Asupan Kalori dan Mikronutrien:</strong> Kekurangan kalori dan mikronutrien (seperti vitamin dan mineral) dapat menyebabkan gangguan metabolisme, pertumbuhan yang terhambat, dan penurunan fungsi tubuh. Sebaliknya, kelebihan asupan kalori dapat menyebabkan obesitas dan penyakit terkait.
+                  <strong>Berat Badan dan Tinggi Badan:</strong> Pengukuran ini merupakan indikator pertama dalam menilai status gizi seseorang. Pengukuran yang tepat dapat membantu dalam mendiagnosis masalah kekurangan atau kelebihan gizi.
+                  <strong>Indeks Massa Tubuh (IMT):</strong> IMT dihitung dengan membagi berat badan (kg) dengan kuadrat tinggi badan (m²). IMT yang normal berkisar antara 18,5 hingga 24,9. Nilai di bawah ini menunjukkan kekurangan gizi, sedangkan nilai di atasnya menunjukkan kelebihan berat badan atau obesitas.
+                  <strong>Asupan Kalori dan Mikronutrien:</strong> Kekurangan kalori dan mikronutrien (seperti vitamin dan mineral) dapat menyebabkan gangguan metabolisme, pertumbuhan yang terhambat, dan penurunan fungsi tubuh. Sebaliknya, kelebihan asupan kalori dapat menyebabkan obesitas dan penyakit terkait.
                 </ul>
 
                 <h4>Jenis-jenis Masalah Gizi</h4>
                 <ul>
-                 <strong>Kekurangan Gizi:</strong> Kekurangan gizi terjadi ketika tubuh tidak menerima cukup kalori atau mikronutrien untuk mempertahankan fungsi tubuh yang optimal. Kekurangan gizi dapat menyebabkan masalah kesehatan serius, termasuk gangguan pertumbuhan pada anak-anak, anemia, dan sistem kekebalan tubuh yang lemah.
-                 <strong>Obesitas:</strong> Obesitas terjadi ketika tubuh memiliki kelebihan lemak yang berpotensi mempengaruhi kesehatan. Obesitas dapat menyebabkan berbagai masalah kesehatan seperti diabetes tipe 2, hipertensi, penyakit jantung, dan gangguan pernapasan.
-                 <strong>Malnutrisi:</strong> Malnutrisi terjadi ketika tubuh kekurangan salah satu atau beberapa zat gizi penting, baik itu makronutrien (karbohidrat, protein, lemak) atau mikronutrien (vitamin dan mineral). Malnutrisi dapat berakibat buruk pada sistem saraf, pertumbuhan, dan daya tahan tubuh.
+                  <strong>Kekurangan Gizi:</strong> Kekurangan gizi terjadi ketika tubuh tidak menerima cukup kalori atau mikronutrien untuk mempertahankan fungsi tubuh yang optimal. Kekurangan gizi dapat menyebabkan masalah kesehatan serius, termasuk gangguan pertumbuhan pada anak-anak, anemia, dan sistem kekebalan tubuh yang lemah.
+                  <strong>Obesitas:</strong> Obesitas terjadi ketika tubuh memiliki kelebihan lemak yang berpotensi mempengaruhi kesehatan. Obesitas dapat menyebabkan berbagai masalah kesehatan seperti diabetes tipe 2, hipertensi, penyakit jantung, dan gangguan pernapasan.
+                  <strong>Malnutrisi:</strong> Malnutrisi terjadi ketika tubuh kekurangan salah satu atau beberapa zat gizi penting, baik itu makronutrien (karbohidrat, protein, lemak) atau mikronutrien (vitamin dan mineral). Malnutrisi dapat berakibat buruk pada sistem saraf, pertumbuhan, dan daya tahan tubuh.
                 </ul>
 
                 <h4>Menjaga Status Gizi yang Seimbang</h4>
